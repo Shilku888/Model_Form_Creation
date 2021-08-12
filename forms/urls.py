@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('modelform.urls')),
     path('api/', include(apis.router.urls)),
+    #path('', include(apis.router.urls)),
 ]

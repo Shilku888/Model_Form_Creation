@@ -7,3 +7,7 @@ class StudentRecordSerializer(serializers.ModelSerializer):
         model = models.StudentRecord
         fields = ('id', 'name', 'age', 'year', 'register_date')
 
+class StudentAddressSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.StudentAddress
+        fields = ('city','pin')

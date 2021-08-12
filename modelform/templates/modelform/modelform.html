@@ -9,7 +9,8 @@
 <form action="#" method="post" >
       {% csrf_token %}
       {{ StudentRecordForm.as_p }}
-      <input type="submit" value="Save"/>
+    {{ StudentAddressForm.as_p }}
+         <input type="submit" value="Save"/>
 </form>
 </body>
 </html>
